@@ -1,6 +1,6 @@
 import os
 import discord
-my_secret = os.environ['KeyTK']
+my_secret = os.environ['TOKEN']
 
 client = discord.Client()
 
@@ -9,10 +9,11 @@ async def on_message(message):
   if message.author == client.user:
     return
 
-  if message.content.startswith('El Psy Kongreey'):
+  if message.content == 'Kongreey':
    await message.channel.send('No! Not Kongreey Kongaroo!')
 
-    if message.content.startswith('El Psy Congroo'):
-     await message.channel.send('No! Not Congroo Kongroo!')
+  if message.content.startswith('El Psy Congroo'):
+    await message.channel.send('No! Not Congroo Kongroo!')
 
-client.run(os.getenv('KeyTK'))
+client.run(os.getenv('TOKEN'))
+my_secret = os.environ['TOKEN']
