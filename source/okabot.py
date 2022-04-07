@@ -9,11 +9,11 @@ async def on_message(message):
   if message.author == client.user:
     return
 
-  if "kongreey" in message.content.lower():
+  if " reey" in message.content.lower():
     await message.channel.send("No! Not Kongreey Kongroo!")
 
-  if "congroo" in message.content.lower():
-    await message.channel.send("No! Not Congroo Kongaroo!")
+  if "cong" in message.content.lower():
+    await message.channel.send("No! Not Congroo Kongroo!")
 
 client.run(os.getenv('TOKEN'))
 my_secret = os.environ['TOKEN']
