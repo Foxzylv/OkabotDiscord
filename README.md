@@ -3,7 +3,7 @@ Based on the spelling correction bot for Reddit
 
 # WIP
 
-Still a Work in progress
+Still a work in progress
 
 # Original repo and description
 https://github.com/Zi-SH/Okabot
